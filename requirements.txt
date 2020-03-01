@@ -187,7 +187,6 @@ pycryptodomex==3.6.1
 pycups==1.9.73
 pycurl==7.43.0.2
 pydot==1.4.1
-pyenchant==2.0.0
 pyExploitDb==0.2.0
 pyfiglet==0.8.post0
 Pygments==2.3.1
