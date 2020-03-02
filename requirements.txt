@@ -231,7 +231,6 @@ PyYAML==5.3
 qrcode==6.1
 Quamash==0.6.1
 redis==3.3.11
-reportbug==7.6.0
 repoze.lru==0.7
 requests==2.22.0
 requests-file==1.4.3
