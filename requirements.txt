@@ -297,7 +297,6 @@ WebTest==2.0.32
 Werkzeug==1.0.0
 wfuzz==2.4.5
 whois==0.7
-wifite==2.5.2
 wrapt==1.11.2
 wsaccel==0.6.2
 wsproto==0.11.0
