@@ -216,7 +216,6 @@ pysmi==0.3.2
 pysnmp==4.4.6
 PySocks==1.6.8
 pytest==5.3.5
-python-apt==1.8.5
 python-dateutil==1.5
 python-debian==0.1.36
 python-debianbts==3.0.2
