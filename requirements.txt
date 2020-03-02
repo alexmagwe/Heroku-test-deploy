@@ -218,7 +218,6 @@ PySocks==1.6.8
 pytest==5.3.5
 python-dateutil==1.5
 python-debian==0.1.36
-python-debianbts==3.0.2
 python-docx==0.8.10
 python-editor==1.0.3
 python-magic==0.4.16
