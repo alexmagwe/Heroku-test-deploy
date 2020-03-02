@@ -251,7 +251,6 @@ shodan==1.21.3
 simplejson==3.16.0
 simplekv==0.13.0
 singledispatch==3.4.0.3
-sip==4.19.21
 six==1.14.0
 smmap2==2.0.5
 smoke-zephyr==1.4.1
