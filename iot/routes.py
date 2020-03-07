@@ -1,5 +1,5 @@
 from iot import app, db, bcrypt
-from flask import Flask, render_template, url_for, redirect, flash
+from flask import Flask, render_template, url_for, redirect, flash, request
 from flask_login import login_user, current_user, logout_user, login_required
 from iot.forms import LoginForm, RegisterationForm
 from iot.models import Users, Devices
