@@ -32,18 +32,21 @@ body
 }
 .navbar
 {
-    float: left;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    top: 0;
 }
 .navbar a
 {
-    font-size: medium;
+    font-size: 25px;
     font-style: italic;
+    color: solid black;
+}
+h5
+{
+    font-size: 20px;
 }
 .main-container
 {
-    width: 80%;
+    width: 90%;
     margin: auto;
 }
 legend{
@@ -52,11 +55,15 @@ legend{
     font-style: italic;
     margin-bottom: 20px;
 }
+.login-form
+{
+    margin-left: auto;
+    margin-right: auto;
+}
 form
 {
     width: 450px;
 	font-size: 16px;
-	background: #495C70;
 	padding: 30px 30px 15px 30px;
 	border: 5px solid #53687E;
 }
@@ -64,33 +71,32 @@ form input{
     margin:1em;
 }
  .inputs{
-     background:transparent;
+    background:transparent;
     border:none;
     outline:none;
+    font-style: bold;
     border-bottom:3px dashed blue;
 
 }
-.navbar
-{
-	float: left;
-	margin-bottom:20px;
-	font-size: 20px;
-	font-style: italic;
-	
-}
-.sidebar
+sidebar
 {
 	float:left;
+    margin-right: 15px;
 
 }
 table
 {
+    width: 70%;
 	float:unset;
 	margin: auto;
 }
 table, th, td
 {
 	border: 1px solid black;
+}
+th
+{
+    height: 50px;
 }
 
 
