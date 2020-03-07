@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="navbar">
+        <nav class="nav-top" >
+            <a href="#">LogOut</a>
+        </nav>
+    </div>
+    <div class="sidebar">
+        <ol>
+            <li>
+                <a href="#">Lights_On</a>
+            </li>
+            <li>
+                <a href="#">Lights_Off</a>
+            </li>
+            <li>
+                <a href="#">Reset IoT</a>  
+            </li>
+        </ol>
+    </div>
+    <div class="table">
+        <table>
+            <thead>
+                <th>Low</th>
+                <th>Lights_On</th>
+                <th>High</th>
+                <th>Lights_Off</th>
+            </thead>
+            <tbody>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tbody>
+        </table>
+    </div>
+
+{% endblock content %}
