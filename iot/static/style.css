@@ -1,10 +1,49 @@
 body
 {
-    background-color: darkgray;
+    background-image:url('images/CNIOT.jpg')
+}
+@media screen and (max-width:1044px) {
+    body {
+        width: 100%;
+    }
+    .imports {
+        display: none;
+    }
+    .torso {
+        margin-top: 2%;
+        height: 1000px;
+    }
+    .logo img {
+        height: 70px;
+        margin-top: 40%;
+    }
+    header {
+        margin-bottom: 15%;
+    }
+    .content {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+@media screen and (max-width:649px) {
+    .for-desktop {
+        display: none;
+    }
+}
+.navbar
+{
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.navbar a
+{
+    font-size: medium;
+    font-style: italic;
 }
 .main-container
 {
-    width: 60%;
+    width: 80%;
     margin: auto;
 }
 legend{
@@ -31,3 +70,27 @@ form input{
     border-bottom:3px dashed blue;
 
 }
+.navbar
+{
+	float: left;
+	margin-bottom:20px;
+	font-size: 20px;
+	font-style: italic;
+	
+}
+.sidebar
+{
+	float:left;
+
+}
+table
+{
+	float:unset;
+	margin: auto;
+}
+table, th, td
+{
+	border: 1px solid black;
+}
+
+

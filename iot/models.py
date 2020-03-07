@@ -19,6 +19,7 @@ class Users(db.Model, UserMixin):
 
 class Devices(db.Model):
     id = db.Column(db.Integer, primary_key=True)
+    date = db.Column(db.DateTime, nullable=False)
     IoT_name= db.Column(db.String(120), unique=True ,nullable=False)
     high = db.Column(db.Integer, nullable=False)
     off_time = db.Column(db.DateTime, nullable = False, default = datetime.utcnow)

@@ -1,38 +1,42 @@
 {% extends "layout.html" %}
 {% block content %}
-    <div class="navbar">
-        <nav class="nav-top" >
-            <a href="{{url_for('logout')}}">Logout</a>
-        </nav>
-    </div>
-    <div class="sidebar">
-        <ol>
-            <li>
-                <a href="#">Lights_On</a>
-            </li>
-            <li>
-                <a href="#">Lights_Off</a>
-            </li>
-            <li>
-                <a href="#">Reset IoT</a>  
-            </li>
-        </ol>
-    </div>
-    <div class="table">
-        <table>
-            <thead>
-                <th>Low</th>
-                <th>Lights_On</th>
-                <th>High</th>
-                <th>Lights_Off</th>
-            </thead>
-            <tbody>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tbody>
-        </table>
+
+    <nav class="navbar" >
+        <h6>Current time: </h6>
+        <a href="{{url_for('logout')}}">Logout</a>
+    </nav>
+    <div class="row">
+        <div class="sidebar">
+            <ol>
+                <li>
+                    <a href="#">Lights_On</a>
+                </li>
+                <li>
+                    <a href="#">Lights_Off</a>
+                </li>
+                <li>
+                    <a href="#">Reset IoT</a>  
+                </li>
+            </ol>
+        </div>
+        <div class="table">
+            <table class="devices"> 
+                <thead>
+                    <th>Date</th>
+                    <th>Low</th>
+                    <th>Lights_On</th>
+                    <th>High</th>
+                    <th>Lights_Off</th>
+                </thead>
+                <tbody>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tbody>
+            </table>
+        </div>
     </div>
 
 {% endblock content %}
