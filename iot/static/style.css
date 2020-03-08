@@ -89,14 +89,33 @@ table
     width: 70%;
 	float:unset;
 	margin: auto;
+    border-collapse: collapse;
 }
-table, th, td
+table, th,td
 {
 	border: 1px solid black;
+}
+th,td
+{
+    border: 1px solid black;
+    padding: 8px;
+}
+tr:nth-child(even)
+{
+    background-color: #f2f2f2;
+}
+tr:hover
+{
+    background-color: #ddd;
 }
 th
 {
     height: 50px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: skyblue;
+    color: black;
 }
 .register
 {
