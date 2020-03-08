@@ -1,11 +1,21 @@
-body
-{
-    background-image:url('images/CNIOT.jpg')
+* {
+    margin: 0;
+    padding: 0;
 }
+
+body {
+    background: #111;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(15, 26, 180);
+}
+
 @media screen and (max-width:1044px) {
-    body {
-        width: 100%;
-    }
     .imports {
         display: none;
     }
@@ -25,119 +35,67 @@ body
         margin-right: 10%;
     }
 }
-@media screen and (max-width:649px) {
-    .for-desktop {
-        display: none;
-    }
+
+.for-desktop {
+    display: none;
 }
-.navbar
-{
-    top: 0;
+
+.navbar {
+    text-align: end;
 }
-.navbar a
-{
-    font-size: 25px;
-    font-style: italic;
-    color: solid black;
+
+.navbar a,
+li a {
+    font-size: 1.5em;
+    font-family: poppins;
+    color: black;
 }
-h5
-{
+
+h5 {
     font-size: 20px;
 }
-.main-container
-{
+
+.main-container {
     width: 90%;
     margin: auto;
 }
-legend{
-    text-align: center;
-    font-size: medium;
-    font-style: italic;
-    margin-bottom: 20px;
-}
-.login-form
-{
-    margin-left: auto;
-    margin-right: auto;
-}
-form
-{
-    width: 450px;
-	font-size: 16px;
-	padding: 30px 30px 15px 30px;
-	border: 5px solid #53687E;
-}
-form input{
-    margin:1em;
-}
- .inputs{
-    background:transparent;
-    border:none;
-    outline:none;
-    font-style: bold;
-    border-bottom:3px dashed darkblue;
 
+sidebar {
+    float: left;
+    margin-right: 2em;
 }
-sidebar
-{
-	float:left;
-    margin-right: 15px;
 
-}
-table
-{
+table {
     width: 70%;
-	float:unset;
-	margin: auto;
+    float: unset;
+    margin: auto;
     border-collapse: collapse;
 }
-table, th,td
-{
-	border: 1px solid black;
+
+table,
+th,
+td {
+    border: 1px solid black;
 }
-th,td
-{
+
+th,
+td {
     border: 1px solid black;
     padding: 8px;
 }
-tr:nth-child(even)
-{
+
+tr:nth-child(even) {
     background-color: #f2f2f2;
 }
-tr:hover
-{
+
+tr:hover {
     background-color: #ddd;
 }
-th
-{
+
+th {
     height: 50px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding: 1em 0;
     text-align: left;
     background-color: skyblue;
     color: black;
-}
-.forgot
-{
-    float: left;
-    margin-right: 100px;
-    margin-bottom: 20px;
-    color: black; 
-    font-size: 15px;
-    font-style: bold;
-}
-.register
-{
-    color: black; 
-    font-size: 15px;
-    font-style: bold;
-    
-}
-.login
-{
-    margin: auto;
-    color: black; 
-    font-size: 15px;
-    font-style: bold;
-}
 }
