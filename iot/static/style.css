@@ -75,7 +75,7 @@ form input{
     border:none;
     outline:none;
     font-style: bold;
-    border-bottom:3px dashed blue;
+    border-bottom:3px dashed darkblue;
 
 }
 sidebar
@@ -98,5 +98,18 @@ th
 {
     height: 50px;
 }
-
-
+.register
+{
+    color: black; 
+    font-size: 15px;
+    font-style: bold;
+    
+}
+.forgot
+{
+    float: left;
+    margin-right: 100px;
+    color: black; 
+    font-size: 15px;
+    font-style: bold;
+}
