@@ -1,47 +1,48 @@
 {% extends ("layout.html") %}
 {% block content %}
+  <img id='background-img' src='{{url_for('static',filename='images/image3.jpeg')}}'>
+ <div class="wrapper">
+        
+            <form method='POST' action=''>
+                            {{ form.hidden_tag() }}
 
-    <div>
-            <form class="login-form" method="POST" action="">
-                {{ form.hidden_tag() }}
-                    <legend class="login">
-                        Login
-                    </legend>
-                    <div class="username">
-                        {{ form.email.label() }}
-                        {% if form.email.errors %}
-                            {{ form.email(class="inputs") }}
-                            <div>
-                                {% for error in form.email.errors %}
-                                    <span>{{ error }}</span>
-                                {% endfor %}
-                            </div>
-                        {% else %}
-                            {{ form.email(class="inputs") }}
-                        {% endif %}
-                    </div>
-                    <div class="password">
-                        {{ form.password.label() }}
-                        {% if form.password.errors %}
-                            {{ form.password(class="inputs") }}
-                            <div>
-                                {% for error in form.password.errors %}
-                                    <span>{{ error }}</span>
-                                {% endfor %}
-                            </div>
-                        {% else %}
-                            {{ form.password(class="inputs") }}
-                        {% endif %}
-                    </div>
-                    <div class="form-check">
-                        {{ form.remember(class="form-check-input") }}
-                        {{ form.remember.label(class="form-check-label") }}
-                    </div>
-                <div >
-                {{ form.submit(class="btn") }}
+                <h2>LOGIN</h2>
+
+                {{ form.email.label(class='input-label') }}
+                    {% if form.email.errors %}
+                        {{ form.email(class="inputs") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.email.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.email(class="inputs") }}
+                    {% endif %}
+
+<!--password-->   
+                 {{ form.password.label(class="input-label") }}
+                    {% if form.password.errors %}
+                        {{ form.password(class="inputs") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.password.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.password(class="inputs") }}
+                    {% endif %}
+                              <div class="form-check">
+                    {{ form.remember(class="form-remember") }}
+                    {{ form.remember.label(class="form-remember-label") }}
                 </div>
-                <a class="forgot" href="#">Forgot password?</a>
+                {{ form.submit(class="button") }}
+               
             </form>
-    </div><!--end log form -->
-
+             <a href="#forgot-pw" class='forgot-pw'>Forgot password?</a>
+                 <div >
+        <small class="text-white">
+     <a class="forgot-pw" href="{{ url_for('register') }}">Sign Up</a>
+        </small>
+        </div>
 {% endblock content %}

@@ -1,14 +1,15 @@
 {% extends ("layout.html") %}
 {% block content %}
+     <img id='background-img' src='{{url_for('static',filename='images/image1.jpg')}}'>
 
-    <div>
+    <div class='wrapper'>
             <form class="login-form" method="POST" action="">
                 {{ form.hidden_tag() }}
-                    <legend class="login">
-                        Login
-                    </legend>
+                    <h2 class="login">
+                        Sign Up
+                    </h2>
                     <div class="username">
-                        {{ form.username.label() }}
+                        {{ form.username.label(class="input-label") }}
                         {% if form.username.errors %}
                             {{ form.username(class="inputs") }}
                             <div>
@@ -21,7 +22,7 @@
                         {% endif %}
                     </div>
                     <div class="username">
-                        {{ form.email.label() }}
+                        {{ form.email.label(class="input-label") }}
                         {% if form.email.errors %}
                             {{ form.email(class="inputs") }}
                             <div>
@@ -34,7 +35,7 @@
                         {% endif %}
                     </div>
                     <div class="password">
-                        {{ form.password.label() }}
+                        {{ form.password.label(class="input-label") }}
                         {% if form.password.errors %}
                             {{ form.password(class="inputs") }}
                             <div>
@@ -47,7 +48,7 @@
                         {% endif %}
                     </div>
                     <div class="confirm_password">
-                        {{ form.confirm_password.label() }}
+                        {{ form.confirm_password.label(class="input-label") }}
                             {% if form.confirm_password.errors %}
                                 {{ form.confirm_password(class="inputs") }}
                                 <div>
@@ -60,9 +61,9 @@
                         {% endif %}
                     </div>
                 <div >
-                {{ form.submit(class="btn") }}
+                {{ form.submit(class="button") }}
                 </div>
-                <a class="forgot" href="#">Already have an account</a>
+                <a class="forgot-pw" href="{{url_for('login')}}"><span>Already have an account</span></a>
             </form>
     </div><!--end log form -->
 
